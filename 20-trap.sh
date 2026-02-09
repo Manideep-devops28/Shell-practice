@@ -25,6 +25,6 @@ do
         echo "$package not installed, installing now"
         dnf install $package -y &>>$LOGS_FILE
     else
-        echoo -e "$package already installed ... $Y SKIPPING $N"
+        echo -e "$package already installed ... $Y SKIPPING $N"
     fi
 done
